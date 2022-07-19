@@ -15,7 +15,8 @@ main {
 
 .container {
     background-color: #ffffff;
-    width: 870px;
+    width: 900px;
+    max-width: 90%;
     padding: 30px;
     border-radius: 5px;
     margin-top: 21px;
@@ -42,6 +43,7 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
+    justify-content: space-between;
 }
 
 .player {
@@ -72,7 +74,7 @@ hr {
 /* top-blog styles */
 .blog img {
     width: 177px;
-    height: 117px;
+    height: 124px;
 }
 
 .blog-info {
@@ -96,20 +98,39 @@ hr {
 
 /* courses style */
 .courses {
+    width: 826px;
+    height: 300px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 24px;
+    grid-row-gap: 10px;
+    justify-content: space-between;
 }
 
-.course .course-banner img {
-    width: 224px;
+img {
+    width: 215px;
     height: 104px;
 }
 
 .course-info {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: start;
+
+}
+
+span {
+    color: #581313;
+    font-weight: 700;
+}
+
+.course-author {
+    color: crimson;
+}
+
+.course-duration {
+    background-color: rgba(186, 119, 163, 0.829);
+    border-radius: 10px;
+    margin: 2px;
+    color: crimson;
 }
 
 .fa-star {
